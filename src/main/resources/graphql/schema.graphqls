@@ -1,0 +1,14 @@
+scalar Date
+
+type Query {
+    feeds: [Feed]
+    feedById(id: ID): Feed
+}
+
+type Feed {
+    title: String!
+    description: String!
+    publish_date: Date!
+    image: String
+}
+
